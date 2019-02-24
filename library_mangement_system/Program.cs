@@ -59,6 +59,12 @@ namespace Main_Program
 
             selectCode = Convert.ToInt32(Console.ReadLine());
 
+            ///
+            /// <summary>
+            /// 主菜单，提示登录与注册
+            /// </summary>
+            ///
+
             switch (selectCode)
             {
                 case 1:
@@ -73,6 +79,9 @@ namespace Main_Program
                     break;
             }
 
+            ///<summary>
+            ///登录模块
+            /// </summary>
             if (loginOrRegisterSelectStatus[key: "loginRequirement"])
             {
                 
@@ -104,6 +113,10 @@ namespace Main_Program
                 }
             }
 
+
+            ///<summary>
+            ///注册模块
+            /// </summary>
             if (loginOrRegisterSelectStatus[key: "registerRequirement"])
             {
                 
@@ -137,6 +150,10 @@ namespace Main_Program
                 }
 
             }
+            
+            ///<summary>
+            ///学生登录成功菜单
+            /// </summary>
 
             if (loginOrRegisterSucceedStatus[key: "studentLoginSucceed"])
             {
