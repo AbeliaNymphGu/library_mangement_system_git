@@ -7,13 +7,13 @@
       <FileName>AccountRepeatException.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="library_management_Lib.Book" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="10.75" Y="0.5" Width="1.5" />
+  <Class Name="library_management_Lib.Book" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>ggAAAACEQQQAQAAABABBAIgAAEACgAAAAABAABAAAAQ=</HashCode>
+      <HashCode>ggAAAACEUQQAQAAABABBAIgAAEACgAAAAABAABAAAAQ=</HashCode>
       <FileName>Book.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="library_management_Lib.BookLibrary" Collapsed="true">
     <Position X="12.5" Y="0.5" Width="1.5" />
@@ -42,23 +42,6 @@
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
-    <NestedTypes>
-      <Class Name="library_management_Lib.Menu.Display" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Menu.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-      <Class Name="library_management_Lib.Menu.Initialization" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Menu.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-      <Class Name="library_management_Lib.Menu.Judge" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Menu.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Class>
-    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Menu.cs</FileName>
@@ -110,7 +93,7 @@
   <Interface Name="library_management_Lib.IBook" Collapsed="true">
     <Position X="9" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAA=</HashCode>
       <FileName>IBook.cs</FileName>
     </TypeIdentifier>
   </Interface>

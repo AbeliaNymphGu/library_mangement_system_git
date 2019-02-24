@@ -26,15 +26,15 @@ namespace Main_Program
             ///<summary>
             ///菜单状态初始化
             /// </summary>
+            /// 
+            #region
             Dictionary<string, bool> loginOrRegisterSelectStatus = new Dictionary<string, bool>(2);
             Dictionary<string, bool> selectUserTypeStatus = new Dictionary<string, bool>(3);
             Dictionary<string, bool> studentMenuSelectStatus = new Dictionary<string, bool>(4);
             Dictionary<string, bool> loginOrRegisterSucceedStatus = new Dictionary<string, bool>(2);
-            ///<summary>
-            ///
-            /// </summary>
-            /// 
-            
+             
+            #endregion
+
 
             loginOrRegisterSelectStatus.Add("loginRequirement", false);
             loginOrRegisterSelectStatus.Add("registerRequirement", false);
@@ -54,6 +54,7 @@ namespace Main_Program
 
             Student student = new Student();
             Librarian librarian = new Librarian();
+            Book book = new Book();
 
             Menu.Display.NoLoginMainMenu();
 
@@ -64,7 +65,6 @@ namespace Main_Program
             /// 主菜单，提示登录与注册
             /// </summary>
             ///
-
             switch (selectCode)
             {
                 case 1:
@@ -154,7 +154,6 @@ namespace Main_Program
             ///<summary>
             ///学生登录成功菜单
             /// </summary>
-
             if (loginOrRegisterSucceedStatus[key: "studentLoginSucceed"])
             {
                 Menu.Display.StudentMainMenu();
@@ -164,10 +163,13 @@ namespace Main_Program
                 switch (selectCode)
                 {
                     case 1:
+                        studentMenuSelectStatus[key: "bookSearchRequirement"] = true;
                         break;
                     case 2:
+                        studentMenuSelectStatus[key: "bookLendingRequirement"] = true;
                         break;
                     case 3:
+                        studentMenuSelectStatus[key: "bookReturnRequirement"] = true;
                         break;
                     case 4:
                         Console.WriteLine($"{ student.ShowInfo()}");
@@ -179,7 +181,25 @@ namespace Main_Program
                 }
             }
 
+            ///<summary>
+            ///书籍查询
+            /// </summary>
+            /// 
+            if (studentMenuSelectStatus[key: "bookSearchRequirement"])
+            {
+                IBook newBook = book;
+                Console.WriteLine(@"Please enter the ISBN:");
+                string targetISBN = Console.ReadLine();
+                bool searchSucceed = false;
+                searchSucceed = newBook.Search(targetISBN, book);
 
+                if (searchSucceed)
+                {
+                    Console.WriteLine($"{book.ShowInfo()}");
+                    System.Threading.Thread.Sleep(10000);
+                    
+                }
+            }
 
 
         }

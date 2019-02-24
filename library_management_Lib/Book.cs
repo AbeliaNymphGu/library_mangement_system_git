@@ -17,9 +17,9 @@ namespace library_management_Lib
         private bool canBorrow;
         private int number;
 
-        private Book()
+        public Book()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public Book(string newTitle, string newISBN, string newPublisher)
@@ -34,49 +34,55 @@ namespace library_management_Lib
 
         public string ContainTitle
         {
-            get => default(string);
+            get => title;
             set
             {
+                title = value;
             }
         }
 
         public string ContainAuthor
         {
-            get => default(string);
+            get => author;
             set
             {
+                author = value;
             }
         }
 
         public string ContainISBN
         {
-            get => default(string);
+            get => ISBN;
             set
             {
+                ISBN = value;
             }
         }
 
         public string ContainPublisher
         {
-            get => default(string);
+            get => publisher;
             set
             {
+                publisher = value;
             }
         }
 
         public bool ContainCanBorrow
         {
-            get => default(bool);
+            get => canBorrow;
             set
             {
+                canBorrow = value;
             }
         }
 
         public int ContainNumber
         {
-            get => default(int);
+            get => number;
             set
             {
+                number = value;
             }
         }
 
@@ -125,8 +131,7 @@ namespace library_management_Lib
             ///throw new System.NotImplementedException();
             ///
 
-            return $"/t/t-------------------------------------------------------\n" +
-                $"Title : {ContainTitle}\n" +
+            return $"Title : {ContainTitle}\n" +
                 $"Author : {ContainAuthor}\n" +
                 $"Publisher : {ContainPublisher}\n" +
                 $"ISBN : {ContainISBN}";
@@ -182,7 +187,9 @@ namespace library_management_Lib
                         new XElement("ISBN", writtenBook.ContainISBN),
                         new XElement("title", writtenBook.ContainTitle),
                         new XElement("author", writtenBook.ContainAuthor),
-                        new XElement("publisher", writtenBook.ContainPublisher)
+                        new XElement("publisher", writtenBook.ContainPublisher),
+                        new XElement("canBorrow",writtenBook.ContainCanBorrow),
+                        new XElement("number",writtenBook.ContainNumber)
                         
                     )));
 
@@ -193,6 +200,30 @@ namespace library_management_Lib
             {
                 throw new AccountRepeatException();
             }
+        }
+
+        bool IBook.Search(string targetBookISBN, Book targetBook)
+        {
+            if (Directory.Exists(@"info\book"))
+            {
+                if (File.Exists(@"info\book\" + $"{targetBookISBN}.xml"))
+                {
+                    XDocument tempBookDocumentXml = XDocument.Load(@"info\book\" + $"{targetBookISBN}.xml");
+                    XElement tempBookXElementRoot = tempBookDocumentXml.Root;
+                    XElement tempBookBookXElement = tempBookXElementRoot.Element("book");
+
+                    targetBook.ContainTitle = tempBookBookXElement.Element("title").Value;
+                    targetBook.ContainAuthor = tempBookBookXElement.Element("author").Value;
+                    targetBook.ContainISBN = tempBookBookXElement.Element("ISBN").Value;
+                    targetBook.ContainPublisher = tempBookBookXElement.Element("publisher").Value;
+                    targetBook.ContainCanBorrow = Convert.ToBoolean(tempBookBookXElement.Element("canBorrow").Value);
+                    targetBook.ContainNumber = Convert.ToInt32(tempBookBookXElement.Element("number").Value);
+
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }

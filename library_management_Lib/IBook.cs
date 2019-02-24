@@ -9,6 +9,7 @@ namespace library_management_Lib
     {
         void AddNewBook(Book newBook);
         void SaveBookInfoOfXml(Book writtenBook);
+        bool Search(string targetBookISBN, Book targetBook);
 
     }
 }
