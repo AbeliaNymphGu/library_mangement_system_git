@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <student>
+    <account>1452750038</account>
+    <password>lierlulu00388239</password>
+    <ID>18436204</ID>
+    <name>GuTianhao</name>
+    <gender>male</gender>
+    <birthday>1999-04-15T12:00:00</birthday>
+    <phoneNumber />
+  </student>
+</students>

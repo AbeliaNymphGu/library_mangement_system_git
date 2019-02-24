@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <student>
+    <account>3106748239</account>
+    <password>Coudor3106748239</password>
+    <ID>18436205</ID>
+    <name>WangLi</name>
+    <gender>2</gender>
+    <birthday>1999-07-13T00:00:00</birthday>
+    <phoneNumber />
+  </student>
+</students>

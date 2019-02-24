@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<librarians>
+  <librarian>
+    <account>3106748239</account>
+    <password>Coudor3106748239</password>
+    <ID>1</ID>
+    <name>王离</name>
+    <gender>female</gender>
+    <birthday>0001-01-01T00:00:00</birthday>
+    <phoneNumber>13456789</phoneNumber>
+  </librarian>
+</librarians>
