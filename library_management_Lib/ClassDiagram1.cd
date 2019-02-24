@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="library_management_Lib.AccountRepeatException" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountRepeatException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="library_management_Lib.Book" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAAAACEQQQAQAAABABBAIgAAEACgAAAAABAABAAAAQ=</HashCode>
+      <FileName>Book.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="library_management_Lib.BookLibrary" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAJAAAAEAAAAAQBCAAAEAQAAAAAAAAABAAAAAAkAA=</HashCode>
+      <FileName>BookLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="library_management_Lib.BorrowHistory" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgQAAIAAIBAAgACCAAAAAAAACAEABAAECAAA=</HashCode>
+      <FileName>BorrowHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="library_management_Lib.Librarian">
+    <Position X="0.75" Y="7" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAACABAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Librarian.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="library_management_Lib.Menu" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="library_management_Lib.Menu.Display" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Menu.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="library_management_Lib.Menu.Initialization" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Menu.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="library_management_Lib.Menu.Judge" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Menu.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="library_management_Lib.Student">
+    <Position X="4.75" Y="7" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAoAAAAAAAAAAAACAAAAAAABAA=</HashCode>
+      <FileName>Student.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="library_management_Lib.User">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>gQAoAACABIAAgABgRAAAgAgAAEAEAQAAQAQAQwAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="library_management_Lib.BookRepeatException" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BookRepeatException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="library_management_Lib.Form" Collapsed="true">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAQgAAAACAAAAIAAAAAAgAAIAAQAAAAAAAAAQgA=</HashCode>
+      <FileName>Form.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="library_management_Lib.ILibrarian" Collapsed="true">
+    <Position X="10.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ILibrarian.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="library_management_Lib.IStudent" Collapsed="true">
+    <Position X="12.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAQAAQAAAAAAA=</HashCode>
+      <FileName>IStudent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="library_management_Lib.IBook" Collapsed="true">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBook.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="library_management_Lib.Gender" Collapsed="true">
+    <Position X="9" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Gender.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="library_management_Lib.Month" Collapsed="true">
+    <Position X="10.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAFEgAAAAAABCAAAAAAAEAAAAAAAAAEAAAAAEAABI=</HashCode>
+      <FileName>Month.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
