@@ -134,7 +134,9 @@ namespace library_management_Lib
             return $"Title : {ContainTitle}\n" +
                 $"Author : {ContainAuthor}\n" +
                 $"Publisher : {ContainPublisher}\n" +
-                $"ISBN : {ContainISBN}";
+                $"ISBN : {ContainISBN}\n" +
+                $"CanBorrow : {ContainCanBorrow}\n" +
+                $"Number : {ContainNumber}\n";
 
         }
 
